@@ -1,8 +1,9 @@
 import Dish from './Dish'
+import styles from './Menu.module.css'
 
 function Menu({ meny }) {
   return (
-    <main>
+    <main className={styles.menu}>
       {meny.map((rett) => (
         <Dish
           key={rett.id}
